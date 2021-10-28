@@ -24,7 +24,7 @@ This script will save all results a dictionary in './results_stringency/SIR/resu
 
 ## 2. Generate simulations
 
-`python /python_scripts/run_simulations -nb_simulations <NUMBER OF SIMULATIONS>`
+`python /python_scripts/run_simulations.py -nb_simulations <NUMBER OF SIMULATIONS>`
 
 This script will generate random population numbers (in Millions), stringency data (governmental interventions scenarios) then apply random transofrmations to obtain beta series (transmission rates) and pass them through a SIR model dynamics (no fitting here), to eventually obtain simulated covid19 cases. Both covid19 scenarios and corresponding betas, stringency are stored as a dictionary in '/results_predictor/SIR/simulations_{NUMBER OF SIMULATIONS}samples.npy'.
 
